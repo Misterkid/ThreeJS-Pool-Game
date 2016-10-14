@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Balls</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+;
+        }
+        p
+        {
+            z-index: 1;
+            position: absolute;
+            color:red;
+        }
+        button
+        {
+            z-index: 1;
+            position: absolute;
+            color:red;
+            margin-left:auto;
+            margin-right:auto;
+            top:50%;
+            left:50%;
+            width: 250px;
+            height:50px;
+            margin: -125px;;
+        }
+
+        .playerTurn
+        {
+            text-align: center;
+            left:50%;
+            width:200px;
+            height:50px;
+            margin-left: -100px;
+            margin-top: 75px;
+        }
+        .text
+        {
+            text-align: center;
+            left:50%;
+            width:300px;
+            height:50px;
+            margin-left: -150px;
+            margin-top: 30px !important;
+        }
+        .speed
+        {
+            text-align: center;
+            left:50%;
+            width:400px;
+            height:50px;
+            margin-left: -200px;
+            margin-top:10px;
+
+        }
+        div
+        {
+            z-index: 1;
+            position: absolute;
+            color:red;
+        }
+        input
+        {
+            z-index: 1;
+            position: absolute;
+            color:red;
+        }
+        body
+        {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<!-- <p>Input Power</p>
+  <input style ='margin-top: 25px !important;' class = "speed"  type="number" value = 80> -->
+    <p class = "speed" >Power: 80</p>
+    <p class = "text">Control the camera with WSAD to move(QE to rotate).</p>
+<!--
+    <p style ='margin-top: 75px !important;'>The red line is a prediction line, can predict wall hit really well! On balls it can be unreliable .</p>
+ -->
+    <p class = "playerTurn" style ='margin-top: 75px !important;'>Turn: </p>
+    <button class ="start">START</button>
+    <script src = "js/lib/three.min.js"></script>
+    <script src = "js/lib/jquery-3.1.0.min.js"></script>
+    <script src = "js/Keyboard.js"></script>
+    <script src = "js/Mouse.js"></script>
+    <script src = "js/AudioSources.js"></script>
+    <script src = "js/OneShotAudio.js"></script>
+    <script src = "js/SceneRenderer.js"></script>
+    <script src =  "js/ColObject.js"></script>
+    <script src = "js/Player.js"></script>
+    <script src = "js/Ball.js"></script>
+    <script src = "js/HoleBall.js"></script>
+    <script src = "js/Main.js"></script>
+</body>
+</html>
